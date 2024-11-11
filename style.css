@@ -45,7 +45,7 @@
 }
 
 .logoText {
-    text-overflow:clip;
+    text-overflow: clip;
     font-size: 2rem;
     color: aliceblue;
     font-weight: bold;
@@ -68,17 +68,17 @@
     flex-direction: column;
     justify-content: center;
     align-items: start;
-    
+
     text-align: start;
     margin-left: 1rem;
     font-weight: bold;
     margin-bottom: -1rem;
-   
+
 }
 
 .firstP {
     width: 38rem;
-   text-wrap:wrap;
+    text-wrap: wrap;
     text-align: start;
     margin-bottom: 1rem;
 }
@@ -96,7 +96,7 @@
 }
 
 h1 {
-    margin-left: 4rem;
+    margin-left: 3rem;
     margin-top: -1rem;
 }
 
@@ -153,24 +153,35 @@ button:hover {
     background-color: rgba(7, 134, 7, 0.774);
 }
 
+.logIn>* {
+    font-size: 0.7rem;
+    font-weight: bold;
+    color: rgb(38, 134, 9);
+}
+
+span:hover {
+    cursor: pointer;
+}
 
 .logIn {
     font-size: 0.7rem;
     font-weight: bold;
     color: rgb(61, 61, 61);
 }
+
 input:valid {
-    
+
     border: 1px solid rgb(218, 218, 215);
 }
+
 input:invalid {
     border-style: solid;
     border-color: rgb(228, 37, 37);
 }
 
-input:focus{
- outline: none;
-border-color: rgb(40, 150, 253);
+input:focus {
+    outline: none;
+    border-color: rgb(40, 150, 253);
 }
 
 input {

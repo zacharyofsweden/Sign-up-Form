@@ -9,7 +9,8 @@
 </head>
 <!-- TODO Restrucure form so it works ignore css! -->
 <!-- Look into style guide -->
- <!-- Consider if table is  viabal instead of flex -->
+<!-- Consider if table is  viabal instead of flex -->
+
 <body>
     <div class="container">
         <div class="leftSide">
@@ -30,32 +31,64 @@
                 <p>You know you want too.</p>
             </div>
 
-            <div class="middle">
-                <form action="/blank" method="post">
-                    <div class="formLeft">
-                        
+            <div class="formContainer">
+                <h1>Let's do This</h1>
+                <form action="/blank" method="post" class="formContent">
+
+                    <div class="leftSide">
+                        <div class="firstName">
+                            <label for="firstname">FirstName</label>
+                            <input type="text" id="firstname" name="user.FirstName">
+                        </div>
+
+                        <div class="email">
+                            <label for="Email">Email</label>
+                            <input type="email" id="Email" name="user.Email">
+                        </div>
+
+
+                        <div class="password">
+                            <label for="Password">Password*</label>
+                            <input type="password" id="Password" name="user.Password">
+                        </div>
+
                     </div>
-                    
-                    <div class="formRight">
+
+                    <div class="rightSide">
+                        <div class="lastName">
+                            <label for="lastname">Last Name</label>
+                            <input type="text" id="lastname" name="user.LastName">
+                        </div>
+
+
+
+                        <div class="phoneNumber">
+                            <label for="nr">PhoneNumber</label>
+                            <input type="tel" id="nr" name="user.PhoneNumber">
+                        </div>
+
+
+
+                        <div class="passwordConfirm">
+                            <label for="confirmPassword">Password Confirm*</label>
+                            <input type="password" id="confirmPassword" name="user.confirmPassword">
+                        </div>
                     </div>
+
+
+                </form>
+
+
+
             </div>
+            <div class="bottom">
+                <button>Create Account</button>
 
-
-
-
-
-
-            </form>
-
-        </div>
-
-        <div class="bottom">
-
+                <p class="logIn">Alredy have an account? Log in</p>
+            </div>
         </div>
     </div>
-    < </div>
 
-        </div>
 </body>
 
 </html>

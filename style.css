@@ -11,12 +11,12 @@
     display: flex;
     height: 100vh;
     min-height: 500px;
-    min-width: 500px;
+    min-width: 30rem;
 }
 
 .leftSide {
     position: relative;
-    flex: 1 0.5 auto;
+    flex: 1 1 auto;
 }
 
 .leftImage {
@@ -45,15 +45,16 @@
 }
 
 .logoText {
-
+    text-overflow:clip;
     font-size: 2rem;
     color: aliceblue;
     font-weight: bold;
+
 }
 
 .rightSide {
     background-color: rgb(240, 245, 245);
-    flex: 2.5 1 auto;
+    flex: 3 1 auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -62,27 +63,29 @@
 }
 
 .top {
-    flex: 2.5 1 auto;
+    flex: 1 1 auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: start;
-    text-wrap: wrap;
+    
     text-align: start;
     margin-left: 1rem;
-
-
+    font-weight: bold;
+    margin-bottom: -1rem;
+   
 }
 
 .firstP {
+    width: 38rem;
+   text-wrap:wrap;
     text-align: start;
     margin-bottom: 1rem;
 }
 
 .formContainer {
-    flex: 2.5 1 auto;
+    flex: 1 1 auto;
     box-shadow: 0.1rem 0.8rem 1rem #dfdede;
-    ;
     background-color: #ffffff;
     display: flex;
     flex-direction: column;
@@ -90,49 +93,45 @@
     justify-content: center;
 
 
-
 }
 
 h1 {
-    margin-left: 5rem;
-    margin-bottom: -3rem;
+    margin-left: 4rem;
+    margin-top: -1rem;
 }
 
 .formContent {
-    position: relative;
+    margin-left: 3rem;
     display: flex;
     flex-direction: row;
 
     justify-content: center;
     align-items: center;
 
-    margin-left: 1rem;
 
-    padding: 4rem;
-    gap: 20px;
+
+    gap: 3rem;
 
 }
 
 .formContent>* {
-
-    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: #ffffff;
-
+    gap: 1rem;
 }
 
 
 .bottom {
-    flex: 2.5 1 auto;
+    flex: 1 1 auto;
     display: flex;
     flex-direction: column;
     justify-content: start;
     align-items: start;
 
-    margin-top: 2rem;
+    margin-top: 1rem;
     margin-left: 1rem;
 
 
@@ -147,17 +146,41 @@ button {
     background-color: green;
     padding: 0.6rem 0.5rem;
     margin-bottom: 1rem;
+    font-weight: bold;
 }
+
+button:hover {
+    background-color: rgba(7, 134, 7, 0.774);
+}
+
 
 .logIn {
     font-size: 0.7rem;
     font-weight: bold;
     color: rgb(61, 61, 61);
 }
+input:valid {
+    
+    border: 1px solid rgb(218, 218, 215);
+}
+input:invalid {
+    border-style: solid;
+    border-color: rgb(228, 37, 37);
+}
+
+input:focus{
+ outline: none;
+border-color: rgb(40, 150, 253);
+}
+
+input {
+    border: 1px solid rgb(218, 218, 215);
+    border-radius: 0.2rem;
+}
 
 label {
     font-size: 0.8rem;
-    color: #4b4b4b;
+    color: #1b1b1b;
 }
 
 label,

@@ -7,9 +7,10 @@
     <title>Form validation</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<!-- TODO Restrucure form so it works ignore css! -->
-<!-- Look into style guide -->
-<!-- Consider if table is  viabal instead of flex -->
+
+<!-- TODO Fix fonts and make input text smaller -->
+ <!-- TODO Fix green on log in -->
+   <!-- TODO Fix last css for inputs -->
 
 <body>
     <div class="container">
@@ -28,7 +29,7 @@
                     to help you releize your deepest dreams.
                     Sign up now to get started.</p>
 
-                <p>You know you want too.</p>
+                <p><i>You know you want to.</i></p>
             </div>
 
             <div class="formContainer">
@@ -49,7 +50,7 @@
 
                         <div class="password">
                             <label for="Password">Password*</label>
-                            <input type="password" id="Password" name="user.Password">
+                            <input type="password" id="Password" name="user.Password" required>
                         </div>
 
                     </div>
@@ -71,7 +72,7 @@
 
                         <div class="passwordConfirm">
                             <label for="confirmPassword">Password Confirm*</label>
-                            <input type="password" id="confirmPassword" name="user.confirmPassword">
+                            <input type="password" id="confirmPassword" name="user.confirmPassword" required>
                         </div>
                     </div>
 
@@ -82,7 +83,7 @@
 
             </div>
             <div class="bottom">
-                <button>Create Account</button>
+                <button type="submit">Create Account</button>
 
                 <p class="logIn">Alredy have an account? Log in</p>
             </div>
